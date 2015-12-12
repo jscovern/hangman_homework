@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Hangman</title>
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+		<script src="http://code.jquery.com/jquery-2.1.4.js"></script>
+		<script src="assets/javascript/javascript.js"></script>
+	</head>
+	
+	<body>
+		<h1>Hangman</h1>
+		<form action="#" method="post">
+			<span class="wordForm" name="wordForm"> 
+				<label for="word">Word for Guessing: </label>
+				<input type="password" id="word" placeholder="Enter a Word" name="word"></input>
+			</span>
+			<span class="wordForm">	
+				<input type="submit" class="wordSubmit"></input>
+			</span>
+		</form>
+
+		<form name="guessLetters" class="hidden guessLetters">
+			<span class="letterForm">
+				<label for="letter"> Guess a Letter: </label>
+				<input type="text" id="letter" placeholder="Guess a Letter"></input>
+			</span>
+
+			<span class="letterForm">
+				<input type="submit" class="letterSubmit"></input>
+			</span>
+		</form>
+		
+		<form name="clearGame" class="hidden clearGame">
+			<span class="">
+				<input type="submit" class="" value="Play Again!"></input>
+			</span>
+		</form>
+
+		<div class="alertUser"></div>
+		<div class="allGuesses">A list of your guesses so far: </div>
+		<div class="correctGuesses">Your Correct Guesses So Far: </div>
+		<div class="winner"></div>
+	</body>
+</html>
